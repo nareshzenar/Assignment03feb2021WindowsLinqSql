@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DMLQueries">
+  <DataContextMoniker Name="/DMLQueriesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c1977fcf-9684-4f70-9275-6e77f1e79ac0" absoluteBounds="3.75, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DMLQueriesDataContext/AdoEmp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0a9825e-fc27-42ae-a8a5-b162856d4e23" absoluteBounds="3.7649999999999997, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WFA3DotNet" Class="DMLQueriesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DELL\SQLEXPRESS;Initial Catalog=WFA3DotNet;Integrated Security=True" SettingsObjectName="Assignment02feb2021WindowsLinqSql.Properties.Settings" SettingsPropertyName="WFA3DotNetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AdoEmp" Member="AdoEmps">
+    <Type Name="AdoEmp">
+      <Column Name="eid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ename" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="esal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="depno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_Insert" Method="sp_Insert">
+    <Parameter Name="ename" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="esal" Type="System.Double" DbType="Float" />
+    <Parameter Name="depno" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DeleteEmp" Method="sp_DeleteEmp">
+    <Parameter Name="eid" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_UpdateEmp" Method="sp_UpdateEmp">
+    <Parameter Name="eid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ename" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="esal" Type="System.Double" DbType="Float" />
+    <Parameter Name="depno" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
